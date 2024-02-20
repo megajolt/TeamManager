@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Equipments</title>
+</head>
+<body>
+    <header>
+        <h1>Equipments</h1>
+    </header>
+    <nav class="localNav">
+        <a href="index.html">Homepage</a>
+        <a href="players.html">Players</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="injuries.html">Injuries</a>
+        <a href="PlayersHaveCoaches.html">Players have Coaches</a>
+        <a href="PlayersHaveInjuries.html">Players have Injuries</a>
+        <a href="PlayersHaveEquipments.html">Players have Equipments</a>
+
+    </nav>
+    <main>
+        <section>
+            <!-- Browse Players -->
+            <h2 class="browse">Browse Equipments</h2>
+            <table border="3" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th colspan="7"> 
+                            <a href="#">Add Equipment</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Equipment ID</th>
+                        <th>Type</th>
+                        <th>Number of Type</th>
+                        <th>Replacement Cost</th>
+                        <th>Condition</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Helmet</td>
+                        <td>25</td>
+                        <td>2000</td>
+                        <td>100</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>   
+                    <tr>
+                        <td>2</td>
+                        <td>Uniform</td>
+                        <td>52</td>
+                        <td>100</td>
+                        <td>95</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Shoes</td>
+                        <td>45</td>
+                        <td>150</td>
+                        <td>75</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ball</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>100</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Mouth Guard</td>
+                        <td>130</td>
+                        <td>10</td>
+                        <td>83</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+            </tbody>
+            </table>
+        </div>
+        <!--Insert-->
+        <div id="Buttons">
+            <form id="addEquipment">
+                <legend>Add Equipment</legend>
+                <fieldset>
+                    <label for="equipmentId">Equipment ID</label>
+                    <input type="text" id="EquipmentId" name="EquipmentId">
+        
+                    <label for="type">Type:</label>
+                    <input type="text" id="type" name="type">
+        
+                    <label for="numOfType">Number of Type</label>
+                    <input type="text" id="numOfType" name="numOfType">
+        
+                    <label for="replacementCost">Replacement Cost</label>
+                    <input type="text" id="replacementCost" name="replacementCost">
+        
+                    <label for="condition">Condition</label>
+                    <input type="text" id="condition" name="condition">
+                </fieldset>
+                <input class="btn" type="submit" id="addEquipment" value="Add Equipment">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Update-->
+        <div id="Buttons">
+            <form id="updateEquipment">
+                <legend>Update Equipment</legend>
+                <fieldset>
+                    <label for="equipmentId">Equipment ID</label>
+                    <input type="text" id="EquipmentId" name="EquipmentId">
+        
+                    <label for="type">Type:</label>
+                    <input type="text" id="type" name="type">
+        
+                    <label for="numOfType">Number of Type</label>
+                    <input type="text" id="numOfType" name="numOfType">
+        
+                    <label for="replacementCost">Replacement Cost</label>
+                    <input type="text" id="replacementCost" name="replacementCost">
+        
+                    <label for="condition">Condition</label>
+                    <input type="text" id="condition" name="condition">
+                </fieldset>
+                <input class="btn" type="submit" id="updateEquipment" value="Update Equipment">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Delete-->     
+        <div id="Buttons">
+            <form id="deleteEquipment">
+                <legend>Delete Equipment</legend>
+                <fieldset>
+                    <label for="deleteEquipmentId">Equipment ID</label>
+                    <input type="text" id="deleteEquipmentId" name="deleteEquipmentId" readonly>
+                    <label for="deleteEquipmentName">Equipment Type</label>
+                    <input type="text" id="deleteType" name="deleteType" readonly>
+                    <label for="deleteNumOfType">Number Of Type</label>
+                    <input type="text" id="deleteNumOfType" name="deleteNumOfType" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="deleteEquipment" value="Delete Equipment">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Players have Coaches</title>
+</head>
+<body>
+    <header>
+        <h1>Players have Coaches</h1>
+    </header>
+    <nav class="localNav">
+        <a href="index.html">Homepage</a>
+        <a href="players.html">Players</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="injuries.html">Injuries</a>
+        <a href="PlayersHaveCoaches.html">Players have Coaches</a>
+        <a href="PlayersHaveInjuries.html">Players have Injuries</a>
+        <a href="PlayersHaveEquipments.html">Players have Equipments</a>
+
+    </nav>
+    <main>
+        <section>
+            <h2 class="browse">Browse Players have Coaches</h2>
+            <table border="3" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th>Player ID</th>
+                        <th>Player Name</th>
+                        <th>Coach ID</th>
+                        <th>Coach Name</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lebron James</td>
+                        <td>1</td>
+                        <td>Jamison Hardy</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td rowspan="2">Godzilla</td>
+                        <td>2</td>
+                        <td>Bobby Dean</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nurman Harwell</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Stephen Curry</td>
+                        <td>3</td>
+                        <td>Nurman Harwell</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Tom Hardy</td>
+                        <td>4</td>
+                        <Td>Dan McNarson</Td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Insert -->
+        <div id="Buttons">
+            <form id="addCoachToPlayer">
+                <legend>Add Coach to a Player</legend>
+                <fieldset>
+                    <label for="coachSelect">Select Coach:</label>
+                    <select id="coachSelect" name="addCoachIdToPlayer">
+                        <!-- Populate options dynamically from Coaches table in the database -->
+                        <option value="1">Jamison Hardy</option>
+                        <option value="2">Bobby Dean</option>
+                        <option value="3">Nurman Harwell</option>
+                        <option value="4">Dan McNarson</option>
+                        <option value="5">Steven Wilson</option>
+                        <!-- Add more options as needed -->
+                    </select>
+
+                    <label for="playerSelect">Select Player:</label>
+                    <select id="playerSelect" name="whichPlayerName">
+                        <!-- Populate options dynamically from Players table in the database -->
+                        <option value="1">Lebron James</option>
+                        <option value="2">Godzilla</option>
+                        <option value="3">Stephen Curry</option>
+                        <option value="4">Tom Hardy</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </fieldset>
+                <input class="btn" type="submit" id="addCoachToPlayer" value="Add Coach Name To Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+
+        <div id="Buttons">
+            <form id="updateCoachID">
+                <legend>Update Coach</legend>
+                <fieldset>  
+                    <label for="oldCoachID">Old Coach ID</label>
+                    <input type="text" id="oldCoachID" name="oldCoachID">
+                    
+                    <label for="newCoachID">New Coach ID</label>
+                    <input type="text" id="newCoachID" name="newCoachID">
+                     
+                    <label for="playerName">From which Player ID</label>
+                    <input type="text" id="playerName" name="name">
+        
+                </fieldset>
+                <input class="btn" type="submit" id="updateCoachID" value="Update Coach ID">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+
+        <!-- Delete -->
+        <div id="Buttons">
+            <form id="deletePlayer">
+                <legend>Delete Coach from a Player</legend>
+                <fieldset>
+                    <label for="deleteCoachIdFromPlayer">Which Coach ID are you Deleting?</label>
+                    <input type="text" id="deleteCoachIdFromPlayer" name="deleteCoachIdFromPlayer" readonly>
+                    <label for="whichPlayerID2">From which Player ID?</label>
+                    <input type="text" id="whichPlayerID2" name="whichPlayerID2" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="deleteCoachFromPlayer" value="Delete Coach ID from Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

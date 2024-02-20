@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Players</title>
+</head>
+<body>
+    <header>
+        <h1>Players</h1>
+    </header>
+    <nav class="localNav">
+        <a href="index.html">Homepage</a>
+        <a href="players.html">Players</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="injuries.html">Injuries</a>
+        <a href="PlayersHaveCoaches.html">Players have Coaches</a>
+        <a href="PlayersHaveInjuries.html">Players have Injuries</a>
+        <a href="PlayersHaveEquipments.html">Players have Equipments</a>
+
+    </nav>
+    <main>
+        <section>
+            <!-- Browse Players -->
+            <h2 class="browse">Browse Players</h2>
+            <table border="3" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th colspan="10"> 
+                            <a href="#">Add Player</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Player ID</th>
+                        <th>Player Name</th>
+                        <th>Jersey Number</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Position</th>
+                        <th>Score</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lebron James</td>
+                        <td>11</td>
+                        <td>72</td>
+                        <td>220</td>
+                        <td>Linebacker</td>
+                        <td>98</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>   
+                <tr>
+                    <td>2</td>
+                    <td>Godzilla</td>
+                    <td>99</td>
+                    <td>200</td>
+                    <td>400</td>
+                    <td>Quarterback</td>
+                    <td>100</td>
+                    <td><a href="#">Edit</a></td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Stephen Curry</td>
+                    <td>30</td>
+                    <td>66</td>
+                    <td>180</td>
+                    <td>Wide Receiver</td>
+                    <td>87</td>
+                    <td><a href="#">Edit</a></td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tom Hardy</td>
+                    <td>6</td>
+                    <td>60</td>
+                    <td>170</td>
+                    <td>Wide Receiver</td>
+                    <td>79</td>
+                    <td><a href="#">Edit</a></td>
+                    <td><a href="#">Delete</a></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <!--Insert-->
+        <div id="Buttons">
+            <form id="addPlayer">
+                <legend>Add Player</legend>
+                <fieldset>
+                    <label for="playerId">Player ID</label>
+                    <input type="text" id="playerId" name="playerId">
+        
+                    <label for="playerName">Player Name</label>
+                    <input type="text" id="playerName" name="name">
+        
+                    <label for="jerseyNumber">Jersey Number</label>
+                    <input type="text" id="jerseyNumber" name="jerseyNumber">
+        
+                    <label for="height">Height</label>
+                    <input type="text" id="height" name="height">
+        
+                    <label for="weight">Weight</label>
+                    <input type="text" id="weight" name="weight">
+        
+                    <label for="position">Position</label>
+                    <input type="text" id="position" name="position">
+        
+                    <label for="score">Score</label>
+                    <input type="text" id="score" name="score">
+                </fieldset>
+                <input class="btn" type="submit" id="addPlayer" value="Add Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Update-->
+        <div id="Buttons">
+            <form id="updatePlayer">
+                <legend>Update Player</legend>
+                <fieldset>
+                    <label for="playerId">Player ID</label>
+                    <input type="text" id="playerId" name="id">
+        
+                    <label for="playerName">Player Name</label>
+                    <input type="text" id="playerName" name="name">
+        
+                    <label for="jerseyNumber">Jersey Number</label>
+                    <input type="text" id="jerseyNumber" name="jerseyNumber">
+        
+                    <label for="height">Height</label>
+                    <input type="text" id="height" name="height">
+        
+                    <label for="weight">Weight</label>
+                    <input type="text" id="weight" name="weight">
+        
+                    <label for="position">Position</label>
+                    <input type="text" id="position" name="position">
+        
+                    <label for="score">Score</label>
+                    <input type="text" id="score" name="score">
+                </fieldset>
+                <input class="btn" type="submit" id="updatePlayer" value="Update Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Delete-->     
+        <div id="Buttons">
+            <form id="deletePlayer">
+                <legend>Delete Player</legend>
+                <fieldset>
+                    <label for="deletePlayerId">Player ID</label>
+                    <input type="text" id="deletePlayerId" name="deletePlayerId" readonly>
+                    <label for="deletePlayerName">Player Name</label>
+                    <input type="text" id="deletePlayerName" name="deletePlayerName" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="deletePlayer" value="Delete Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

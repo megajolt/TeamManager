@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Players have Equipments</title>
+</head>
+<body>
+    <header>
+        <h1>Players have Equipments</h1>
+    </header>
+    <nav class="localNav">
+        <a href="index.html">Homepage</a>
+        <a href="players.html">Players</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="injuries.html">Injuries</a>
+        <a href="PlayersHaveCoaches.html">Players have Coaches</a>
+        <a href="PlayersHaveInjuries.html">Players have Injuries</a>
+        <a href="PlayersHaveEquipments.html">Players have Equipments</a>
+
+    </nav>
+    <main>
+        <section>
+            <h2 class="browse">Browse Players have Equipments</h2>
+            <table border="3" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th>Player ID</th>
+                        <th>Player Name</th>
+                        <th>Equipment ID</th>
+                        <th>Type</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lebron James</td>
+                        <td>1</td>
+                        <td>Helmet</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td rowspan="2">Godzilla</td>
+                        <td>2</td>
+                        <td>Uniform</td>                        
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Shoes</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Stephen Curry</td>
+                        <td>3</td>
+                        <td>Shoes</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Tom Hardy</td>
+                        <td>4</td>
+                        <td>Ball</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Insert -->
+        <div id="Buttons">
+            <form id="addEquipmentToPlayer">
+                <legend>Add Equipment to a Player</legend>
+                <fieldset>
+                    <label for="addEquipmentIdToPlayer">Which Equipment Type are you adding?</label>
+                    <input type="text" id="addEquipmentTypeToPlayer" name="addEquipmentTypeToPlayer">
+                    <label for="whichPlayerID">To which Player?</label>
+                    <input type="text" id="whichPlayerName" name="whichPlayerName" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="addEquipmentToPlayer" value="Add Equipment Type To Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+
+        <div id="Buttons">
+            <form id="updateEquipmentID">
+                <legend>Update Equipment to a Player</legend>
+                <fieldset>  
+                    <label for="oldEquipmentID">Old Equipment ID</label>
+                    <input type="text" id="oldEquipmentID" name="oldEquipmentID">
+                    
+                    <label for="newEquipmentID">New Equipment ID</label>
+                    <input type="text" id="newEquipmentID" name="newEquipmentID">
+                     
+                    <label for="playerName">From which Player ID</label>
+                    <input type="text" id="playerName" name="name">
+        
+                </fieldset>
+                <input class="btn" type="submit" id="updateEquipmentID" value="Update Equipment ID">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+
+        <!-- Delete -->
+        <div id="Buttons">
+            <form id="deletePlayer">
+                <legend>Delete Equipment from a Player</legend>
+                <fieldset>
+                    <label for="deleteEquipmentIdFromPlayer">Which Equipment ID are you Deleting?</label>
+                    <input type="text" id="deleteEquipmentIdFromPlayer" name="deleteEquipmentIdFromPlayer" readonly>
+                    <label for="whichPlayerID2">From which Player ID?</label>
+                    <input type="text" id="whichPlayerID2" name="whichPlayerID2" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="deleteEquipmentFromPlayer" value="Delete Equipment ID from Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

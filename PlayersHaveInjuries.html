@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Players have Injuries</title>
+</head>
+<body>
+    <header>
+        <h1>Players have Injuries</h1>
+    </header>
+    <nav class="localNav">
+        <a href="index.html">Homepage</a>
+        <a href="players.html">Players</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="injuries.html">Injuries</a>
+        <a href="PlayersHaveCoaches.html">Players have Coaches</a>
+        <a href="PlayersHaveInjuries.html">Players have Injuries</a>
+        <a href="PlayersHaveEquipments.html">Players have Equipments</a>
+
+    </nav>
+    <main>
+        <section>
+            <h2 class="browse">Browse Players have Injuries</h2>
+            <table border="3" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th>Player ID</th>
+                        <th>Player Name</th>
+                        <th>Injury ID</th>
+                        <th>Injury Name</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td rowspan="2">Lebron James</td>
+                        <td>1</td>
+                        <td>Sprained Ankle</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>ACL tear</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Godzilla</td>
+                        <td>2</td>
+                        <td>Turf Toe</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3</td>
+                        <td rowspan="2">Stephen Curry</td>
+                        <td>2</td>
+                        <td>Turf Toe</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Concussion</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Insert -->
+        <div id="Buttons">
+            <form id="addInjuryToPlayer">
+                <legend>Add Injury to a Player</legend>
+                <fieldset>
+                    <label for="addInjuryIdToPlayer">Which Injury are you adding?</label>
+                    <input type="text" id="addInjuryNameToPlayer" name="addInjuryNameToPlayer">
+                    <label for="whichPlayerID">To which Player?</label>
+                    <input type="text" id="whichPlayerName" name="whichPlayerName" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="addInjuryToPlayer" value="Add Injury NameTo Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+
+        <div id="Buttons">
+            <form id="updateInjuryID">
+                <legend>Update Injury to a Player</legend>
+                <fieldset>  
+                    <label for="oldInjuryID">Old Injury ID</label>
+                    <input type="text" id="oldInjuryID" name="oldInjuryID">
+                    
+                    <label for="newInjuryID">New Injury ID</label>
+                    <input type="text" id="newInjuryID" name="newInjuryID">
+                     
+                    <label for="playerName">From which Player ID</label>
+                    <input type="text" id="playerName" name="name">
+        
+                </fieldset>
+                <input class="btn" type="submit" id="updateInjuryID" value="Update Injury ID">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+
+        <!-- Delete -->
+        <div id="Buttons">
+            <form id="deletePlayer">
+                <legend>Delete Injury from a Player</legend>
+                <fieldset>
+                    <label for="deleteInjuryIdFromPlayer">Which Injury ID are you Deleting?</label>
+                    <input type="text" id="deleteInjuryIdFromPlayer" name="deleteInjuryIdFromPlayer" readonly>
+                    <label for="whichPlayerID2">From which Player ID?</label>
+                    <input type="text" id="whichPlayerID2" name="whichPlayerID2" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="deleteInjuryFromPlayer" value="Delete Injury ID from Player">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+    </main>
+</body>
+</html>

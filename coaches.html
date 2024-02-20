@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <title>Coaches</title>
+</head>
+<body>
+    <header>
+        <h1>Coaches</h1>
+    </header>
+    <nav class="localNav">
+        <a href="index.html">Homepage</a>
+        <a href="players.html">Players</a>
+        <a href="equipments.html">Equipments</a>
+        <a href="coaches.html">Coaches</a>
+        <a href="injuries.html">Injuries</a>
+        <a href="PlayersHaveCoaches.html">Players have Coaches</a>
+        <a href="PlayersHaveInjuries.html">Players have Injuries</a>
+        <a href="PlayersHaveEquipments.html">Players have Equipments</a>
+
+    </nav>
+    <main>
+        <section>
+            <!-- Browse Players -->
+            <h2 class="browse">Browse Coaches</h2>
+            <table border="3" cellpadding="20">
+                <thead>
+                    <tr>
+                        <th colspan="10"> 
+                            <a href="#">Add Coaches</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Coach ID</th>
+                        <th>Coach Name</th>
+                        <th>Title</th>
+                        <th>Years Coaching</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Jamison Hardy</td>
+                        <td>Head Coach</td>
+                        <td>12</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>   
+                    <tr>
+                        <td>2</td>
+                        <td>Bobby Dean</td>
+                        <td>Defense Coordinator</td>
+                        <td>8</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nurman Harwell</td>
+                        <td>Tight-Ends Coach</td>
+                        <td>6</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Dan McNarson</td>
+                        <td>Offensive Coordinator</td>
+                        <td>10</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Steven Wilson</td>
+                        <td>Running Backs Coach</td>
+                        <td>9</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>
+            </tbody>
+            </table>
+        </div>
+        <!--Insert-->
+        <div id="Buttons">
+            <form id="addCoach">
+                <legend>Add Coach</legend>
+                <fieldset>
+                    <label for="coachId">Coach ID</label>
+                    <input type="text" id="coachId" name="coachId">
+        
+                    <label for="coachName">Coach Name</label>
+                    <input type="text" id="coachName" name="coachName">
+        
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+        
+                    <label for="yearsCoaching">Years Coaching</label>
+                    <input type="text" id="yearsCoaching" name="yearsCoaching">
+        
+                </fieldset>
+                <input class="btn" type="submit" id="addCoach" value="Add Coach">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Update-->
+        <div id="Buttons">
+            <form id="updateCoach">
+                <legend>Update Coach</legend>
+                <fieldset>
+                    <label for="coachId">Coach ID</label>
+                    <input type="text" id="coachId" name="coachId">
+        
+                    <label for="coachName">Coach Name</label>
+                    <input type="text" id="coachName" name="coachName">
+        
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title">
+        
+                    <label for="yearsCoaching">Years Coaching</label>
+                    <input type="text" id="yearsCoaching" name="yearsCoaching">
+                </fieldset>
+                <input class="btn" type="submit" id="updateCoach" value="Update Coach">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        <!--Delete-->     
+        <div id="Buttons">
+            <form id="deleteCoach">
+                <legend>Delete Coach</legend>
+                <fieldset>
+                    <label for="deleteCoachId">Coach ID:</label>
+                    <input type="text" id="deleteCoachId" name="deleteCoachId" readonly>
+                    <label for="deleteCoachName">Coach Name:</label>
+                    <input type="text" id="deleteCoachName" name="deleteCoachName" readonly>
+                </fieldset>
+                <input class="btn" type="submit" id="deleteCoach" value="Delete Coach">
+                <input class="btn" type="button" value="Cancel">
+            </form>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
